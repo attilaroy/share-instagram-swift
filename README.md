@@ -1,5 +1,5 @@
 # share-instagram-swift
-The 'share-instagram-swift' library helps the iOS Swift developer to share an image with caption in Instagram.
+The 'share-instagram-swift' helps to share an image with caption to the Instagram application with the latest swift 4.2 version
 
 # Prerequisite
 The Instagram application should be installed in the device
