@@ -175,9 +175,11 @@
 				TargetAttributes = {
 					9A58B2AF1B37078D00B76BC1 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = YJD64NSP47;
 					};
 					9A58B2C41B37078D00B76BC1 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = YJD64NSP47;
 						TestTargetID = 9A58B2AF1B37078D00B76BC1;
 					};
 				};
@@ -356,9 +358,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YJD64NSP47;
 				INFOPLIST_FILE = ShareInstagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.attila.ShareInstagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -366,9 +371,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YJD64NSP47;
 				INFOPLIST_FILE = ShareInstagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.attila.ShareInstagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -376,6 +384,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = YJD64NSP47;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -387,6 +396,7 @@
 				INFOPLIST_FILE = ShareInstagramTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShareInstagram.app/ShareInstagram";
 			};
 			name = Debug;
@@ -395,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = YJD64NSP47;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -402,6 +413,7 @@
 				INFOPLIST_FILE = ShareInstagramTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShareInstagram.app/ShareInstagram";
 			};
 			name = Release;
@@ -425,6 +437,7 @@
 				9A58B2D11B37078D00B76BC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A58B2D21B37078D00B76BC1 /* Build configuration list for PBXNativeTarget "ShareInstagramTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +446,7 @@
 				9A58B2D41B37078D00B76BC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

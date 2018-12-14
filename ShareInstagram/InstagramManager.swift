@@ -8,10 +8,11 @@
 import Foundation
 import UIKit
 
-private let documentInteractionController = UIDocumentInteractionController()
+//let documentInteractionController = UIDocumentInteractionController()
 
 class InstagramManager: NSObject, UIDocumentInteractionControllerDelegate {
     
+    private let documentInteractionController = UIDocumentInteractionController()
     private let kInstagramURL = "instagram://"
     private let kUTI = "com.instagram.exclusivegram"
     private let kfileNameExtension = "instagram.igo"
@@ -30,18 +31,26 @@ class InstagramManager: NSObject, UIDocumentInteractionControllerDelegate {
         // called to post image with caption to the instagram application
         
         let instagramURL = NSURL(string: kInstagramURL)
-        if UIApplication.sharedApplication().canOpenURL(instagramURL!) {
-            var jpgPath = NSTemporaryDirectory().stringByAppendingPathComponent(kfileNameExtension)
-            UIImageJPEGRepresentation(imageInstagram, 1.0).writeToFile(jpgPath, atomically: true)
-            var rect = CGRectZero
-            var fileURL = NSURL.fileURLWithPath(jpgPath)
-            documentInteractionController.URL = fileURL!
+        if UIApplication.shared.canOpenURL(instagramURL! as URL) {
+            let jpgPath = (NSTemporaryDirectory() as NSString).appendingPathComponent(kfileNameExtension)
+            
+            do {
+            try imageInstagram.jpegData(compressionQuality: 0.75)?.write(to: URL(fileURLWithPath: jpgPath), options: .atomic)
+            } catch {
+                print(error)
+            }
+
+            let rect = CGRect.zero
+            let fileURL = NSURL.fileURL(withPath: jpgPath)
+            
+            
+            documentInteractionController.url = fileURL
             documentInteractionController.delegate = self
-            documentInteractionController.UTI = kUTI
+            documentInteractionController.uti = kUTI
             
             // adding caption for the image
             documentInteractionController.annotation = ["InstagramCaption": instagramCaption]
-            documentInteractionController.presentOpenInMenuFromRect(rect, inView: view, animated: true)
+            documentInteractionController.presentOpenInMenu(from: rect, in: view, animated: true)
         }
         else {
             

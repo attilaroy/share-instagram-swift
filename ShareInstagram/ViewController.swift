@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     @IBAction func buttonActionShare(sender: AnyObject) {
         
         // share to instagram
-        InstagramManager.sharedManager.postImageToInstagramWithCaption(imageView.image!, instagramCaption: "My Photo", view: self.view)
+        InstagramManager.sharedManager.postImageToInstagramWithCaption(imageInstagram: imageView.image!, instagramCaption: "My Photo", view: self.view)
     }
 }
 
