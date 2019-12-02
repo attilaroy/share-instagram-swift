@@ -1,5 +1,5 @@
 # share-instagram-swift
-The 'share-instagram-swift' helps to share an image to the Instagram application with the latest swift 4.2 version
+The 'share-instagram-swift' helps to share an image to the Instagram application with the latest swift 5.1 version
 
 # Prerequisite
 The Instagram application should be installed in the device
