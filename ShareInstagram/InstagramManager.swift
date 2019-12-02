@@ -14,8 +14,8 @@ class InstagramManager: NSObject, UIDocumentInteractionControllerDelegate {
     
     private let documentInteractionController = UIDocumentInteractionController()
     private let kInstagramURL = "instagram://"
-    private let kUTI = "com.instagram.exclusivegram"
-    private let kfileNameExtension = "instagram.igo"
+    private let kUTI = "com.instagram.photo" //"com.instagram.exclusivegram"
+    private let kfileNameExtension = "instagram.ig"//"instagram.igo"
     private let kAlertViewTitle = "Error"
     private let kAlertViewMessage = "Please install the Instagram application"
     
